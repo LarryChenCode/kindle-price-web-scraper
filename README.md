@@ -31,6 +31,7 @@ The core functionality of this project is encapsulated in a function designed to
 
 ### Code
 ```python
+# Create check_price function and combine all of the above code into one function
 def check_price():
     URL = 'https://www.amazon.com/Becoming-Data-Head-Understand-Statistics-ebook/dp/B092TSVZJ8/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr='
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36", "Accept-Encoding":"gzip, deflate", "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "DNT":"1","Connection":"close", "Upgrade-Insecure-Requests":"1"}
@@ -53,7 +54,6 @@ def check_price():
       send_mail()
 
 # Create a send_mail function
-
 def send_mail():
     server = smtplib.SMTP_SSL('smtp.gmail.com',465)
     server.ehlo()
